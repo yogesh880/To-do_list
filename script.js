@@ -7,6 +7,16 @@ let taskArray=JSON.parse(localStorage.getItem('task'))||[];
  taskArray.forEach((task)=>renderTask(task)
  );
 
+const themeBtn = document.getElementById('Theme');
+themeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  if (document.body.classList.contains('light-mode')) {
+    themeBtn.textContent = 'DarkTheme';
+  } else {
+    themeBtn.textContent = 'LightTheme';
+  }
+});
+
 addbtn.addEventListener('click',()=>{
   let tasktext=inputtext.value.trim();
   if (tasktext==='') return;

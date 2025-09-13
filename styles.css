@@ -60,6 +60,14 @@ button:hover {
   background-color: #3700b3;
 }
 
+#Theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  padding: 10px 15px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -91,4 +99,42 @@ li button {
 
 li button:hover {
   background-color: #b71c1c;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.light-mode .container {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode input[type="text"] {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+body.light-mode button {
+  background-color: #007bff;
+}
+
+body.light-mode button:hover {
+  background-color: #0056b3;
+}
+
+body.light-mode li {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+body.light-mode li button {
+  background-color: #dc3545;
+}
+
+body.light-mode li button:hover {
+  background-color: #c82333;
 }
